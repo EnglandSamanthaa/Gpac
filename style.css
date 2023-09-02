@@ -234,13 +234,7 @@ main{
 header div img{
     height: 200px;
     width: 200px;
-}
-
-
-main div{
-    margin: 0px 225px;
-}
-   
+}   
 }
 
 
@@ -288,9 +282,6 @@ display: none;
     padding: 5px;
 }
 
-.mainContainerDiv{
-    margin: 0px 50px;
-}
 .newSoundTrailer img{
     width: 80vw;
 }
