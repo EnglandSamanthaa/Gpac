@@ -189,12 +189,35 @@ main{
     align-items: center;
     justify-content: center;
 }
-main div{ 
-    margin: 0px 400px;
+.mainContainerDiv{ 
+    width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.homeParagraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.harvestFestSignUp{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.harvestFestSignUp div, .remindSignUp{
+    margin: 25px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.newSoundTrailer img{
+    width: 50vw;
 }
 
 
@@ -265,8 +288,11 @@ display: none;
     padding: 5px;
 }
 
-main div{
+.mainContainerDiv{
     margin: 0px 50px;
+}
+.newSoundTrailer img{
+    width: 80vw;
 }
 
 }
@@ -337,4 +363,5 @@ main div{
         width:100%;
         flex-direction: row;
     }
+
 }
