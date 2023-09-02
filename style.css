@@ -190,7 +190,7 @@ main{
     justify-content: center;
 }
 .mainContainerDiv{ 
-    width: 75vw;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -216,7 +216,7 @@ main{
     justify-content: center;
     align-content: center;
 }
-.newSoundTrailer img{
+#soundTrailer{
     width: 50vw;
 }
 
@@ -282,7 +282,7 @@ display: none;
     padding: 5px;
 }
 
-.newSoundTrailer img{
+#soundTrailer{
     width: 80vw;
 }
 
