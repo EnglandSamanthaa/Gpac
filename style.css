@@ -217,7 +217,7 @@ main{
     align-content: center;
 }
 #soundTrailer{
-    width: 50vw;
+    width: 100%;
 }
 
 
@@ -280,10 +280,6 @@ display: none;
 .social div{
     height: 30%;
     padding: 5px;
-}
-
-#soundTrailer{
-    width: 80vw;
 }
 
 }
