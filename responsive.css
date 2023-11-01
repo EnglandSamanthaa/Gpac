@@ -1,0 +1,36 @@
+/* 
+@media (max-width: 1883px){
+    .thankYouParagraph{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sincerelyContainer{
+        margin-top: -10px;
+    }
+    .sincerelyContainer p{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media Queries (for small PC, tablet, and mobile) */
+@media (max-width: 1250px) {
+
+
+    /* Add more styles for smaller screens... */
+}
+
+@media (max-width: 775px) {
+
+
+    /* Add more styles for tablets... */
+}
+
+@media (max-width: 426px) {
+   
+}
+
+
+

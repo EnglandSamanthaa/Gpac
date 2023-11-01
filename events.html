@@ -7,59 +7,266 @@
     <title>Geneseo Performing Arts Council</title>
     <meta name="description" content="GPAC is a non-profit organization created in 2003 from the merger of the Geneseo #228 School District band, choir, and speech/theater booster clubs.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
-        <div>
-            <img class="left" src="Images/f65770_48a661b106bf4a88b18ba3347ac8959a~mv2.webp" alt="">
-        </div>
-        
-        <div class="navigation">
-            <h1>GPAC</h1>
-            <ul class="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="board.html">GPAC Board</a></li>
-            </ul>
-        </div>
+  <body id="events" class="flexColumn_center">
+        <!-- pluggin for facebook feed -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="d0KM4L77"></script>
 
-        <div>
-            <img class="right" src="Images/f65770_48a661b106bf4a88b18ba3347ac8959a~mv2.webp" alt="">
-        </div>
-    </header>
+        <header class="flexColumn_center">
+            <!-- LOGO, banner, meh whatever you want to call it -->
+            <div class="headerLogoContainer flexRow_center">
+    
+                <div class="imageContainer flexColumn_center">
+                    <img class="left logo" src="Images/f65770_48a661b106bf4a88b18ba3347ac8959a~mv2.webp" alt="">
+                </div>
+    
+                <div class="headerDonateNameContainer flexColumn_justifySpaceBetween_alignCenter">
+                    <div class="name flexColumn_center">
+                        <h1 class="flexColumn_center">GPAC</h1>
+                        <h2 class="flexColumn_center">Geneseo Performing Arts Council</h2>
+                    </div>
+    
+                    <div class="donate flexColumn_center">
+                        <h3 class="flexColumn_center">
+                            <a class="flexColumn_center" href="https://www.paypal.com/donate?business=gpacpals@gmail.com&currency_code=USD" target="_blank">Donate</a>
+                        </h3>
+                    </div>
+                </div>
+    
+                <div class="imageContainer flexColumn_center">
+                    <img class="right logo" src="Images/f65770_48a661b106bf4a88b18ba3347ac8959a~mv2.webp" alt="">
+                </div>
+    
+            </div>
+    
+            <!-- Navigation bar -->
+            <nav class="navigation">
+                <container class="navListContainer flexColumn_center">
+                    <ul class="navList flexRow_center">
+                        <li class="flexColumn_center"><a class="flexColumn_center" href="index.html">Home</a></li>
+                        <li class="flexColumn_center"><a class="flexColumn_center" href="events.html">Events</a></li>
+                        <li class="flexColumn_center"><a class="flexColumn_center" href="faculty.html">Faculty</a></li>
+                        <li class="flexColumn_center"><a class="flexColumn_center" href="familyResources.html">Families</a></li>
+                        <li class="flexColumn_center"><a class="flexColumn_center" href="board.html">Board</a></li>
+                    </ul>
+                </container>
+            </nav>
+        </header>
 
-    <main></main>
+    <main id="eventsMaiMainn" class="flexRowWrap_justifySpaceAround_alignCenter">
+
+        <container class="facebookFeedContainer flexColumn_center">
+            <article class="facebookFeed flexColumn_justifyFlexEnd_alignSpaceBetween">
+                <div class="follow flexColumn_center">
+                    <h3 class="flexColumn_center">Follow us on Facebook!</h3>
+                </div>
+                <div class="fb-page" data-href="https://www.facebook.com/GeneseoPerformingArtsCouncil/" data-tabs="events, timeline" data-width="400" data-height="500"  data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/GeneseoPerformingArtsCouncil/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GeneseoPerformingArtsCouncil/">GPAC</a>
+                    </blockquote>
+                </div>
+            </article>
+        </container>
+        <container id="containerForEvents" class="flexColumn_center">
+            <div class="flexColumn_center">
+                <h2 class="flexColumn_center">Events</h2>
+            </div>
+            
+            <container id="summerEventsContainer" class="flexColumn_center">
+                <h3 class="flexColumn_center">Summer</h3>
+
+                <div id="summerEvents" class="flexColumn_center">
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">June</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">July</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">August</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fallEvents" class="flexColumn_center">
+                    <h3 class="flexColumn_center">Fall</h3>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">September</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">October</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">November</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="winterEvents" class="flexColumn_center">
+                    <h3 class="flexColumn_center">Winter</h3>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">December</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">January</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">February</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="springEvents" class="flexColumn_center">
+                    <h3 class="flexColumn_center">Spring</h3>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">March</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">April</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+
+                    <div class="month flexColumn_center">
+                        <h4 class="flexColumn_center">May</h4>
+                        <div class="events flexColumn_center">
+                        </div>
+                    </div>
+                </div>
+
+            </container>
+        </container>
+    </main>
   
     
-    <footer>
-        <div class="gpacFooter">
-            <div class="info">
-                <p>Geneseo Performing Arts Council</p>
-                <p>Co-Presidents: Jennifer Schmedding & TJ Splear</p>
-                <p>gpac2003@gmail.com</p>
+    <footer class="flexColumn_center">
+        <div class="gpacFooter flexRowWrap_justifySpaceAround_alignTop">
+            
+            <div id="boardFooter" class="flexColumn_center">
+                <container id="footerBoardHeadingContainer" class="flexColumn_center">
+                    <h5>Geneseo Performing Arts Council</h5>
+                </container>
+
+                <container id="footerBoardListContainer" class="flexColumn_center">
+                    <container id="presidentsFooter" class="footerBoard flexRow_center">
+                        <h6 class="flexRow_noWrap_justifyLeft_alignCenter">Co-Presidents:</h6> 
+                        <div id="presidentListFooter" class="flexColumn_justifiyCenter_alignRight">
+                            <p class="flexColumn_justifiyCenter_alignRight">Jennifer Schmedding</p>
+                            <p class="flexColumn_justifiyCenter_alignRight">TJ Splear</p>
+                        </div>
+                    </container>
+
+                    <container id="vicePresidentsFooter" class="footerBoard flexRow_center">
+                        <h6 class="flexRow_noWrap_justifyLeft_alignCenter">Vice Presidents:</h6>
+                        <div id="vicePresidentListFooter" class="flexColumn_justifiyCenter_alignRight">
+                            <p class="flexRow_noWrap_justifyRight_alignCenter">Val Plumley <span>(Band)</span></p>
+                            <p class="flexRow_noWrap_justifyRight_alignCenter">Amy Lovig <span>(Choir)</span></p>
+                            <p class="flexRow_noWrap_justifyRight_alignCenter">Andrea Hogue <span>(Theater)</span></p>
+                        </div>
+                    </container>
+
+                    <container id="treasurerFooter" class="footerBoard flexRow_center">
+                        <h6 class="flexRow_noWrap_justifyLeft_alignCenter">Treasurer:</h6>
+                        <div id="treasurerListFooter" class="flexColumn_justifiyCenter_alignRight">
+                            <p class="flexColumn_justifiyCenter_alignRight">Bryce Henderson</p>
+                        </div>
+                    </container>
+
+                    <container id="assistantTreasurerFooter" class="footerBoard flexRow_center">
+                        <h6 class="flexRow_noWrap_justifyLeft_alignCenter">Assistant Treasurers:</h6>
+                        <div id="assistantTreasurerListFooter" class="flexColumn_justifiyCenter_alignRight">
+                            <p class="flexColumn_justifiyCenter_alignRight">Kate Davis</p>
+                            <p class="flexColumn_justifiyCenter_alignRight">Jenn Johnson</p>
+                        </div>
+                    </container>
+
+                    <container id="secetaryFooter" class="footerBoard flexRow_center">
+                        <h6 class="flexRow_noWrap_justifyLeft_alignCenter">Secetary:</h6>
+                        <div id="secetaryListFooter" class="flexColumn_justifiyCenter_alignRight">
+                            <p class="flexColumn_justifiyCenter_alignRight">Olivia Melton</p>
+                        </div>
+                    </container>
+                </container>
             </div>
-            <div class="mailing">
-                <h5>Mailing</h5>
-                <div>   
-                    <p>Geneseo Performing Arts Council</p>
-                    <p>Po Box 233</p>
-                    <p>Geneseo, IL 61254</p>
-                </div>
+
+            <div id="geneseoLogo" class="flexColumn_center">
+                <a class="flexColumn_center" href="https://www.geneseoschools.org/" target="_blank"><img id="geneseoSchoolsLogo" src="Images/Geneseo_CUSD__228_web_logo_template_300.png" alt=""></a>
             </div>
-            <div class="social">
-                <div>
-                <a href="https://www.facebook.com/GeneseoPerformingArtsCouncil"></a><img src="Images/icons8-facebook-48.png" alt="">
-                </div>
-                <div>
-                    <!-- create a youtube account -->
-                    <a href=""></a><img src="Images/icons8-youtube-100.png" alt="">
-                </div>
+
+            <div id="contactFooter" class="flexColumn_center">
+                <container id="footerContactHeadingContainer" class="flexColumn_center">
+                    <h5 class="flexColumn_center">Contact</h5>
+                </container>
+               
+                <container id="footerContactContainer" class="flexColumn_justifySpaceBetween_alignCenter">
+                    <div id="mailing" class="flexColumn_center">
+                        <h6 class="flexColumn_center">Mailing</h5>
+                        <div class="flexColumn-justifiyCenter-alignleft">   
+                            <p class="flexColumn-justifiyCenter-alignleft">Geneseo Performing Arts Council</p>
+                            <p class="flexColumn-justifiyCenter-alignleft">Po Box 233</p>
+                            <p class="flexColumn-justifiyCenter-alignleft">Geneseo, IL 61254</p>
+                        </div>   
+                    </div>
+                    <div id="email" class="flexColumn_center">
+                        <h6 class="flexColumn_center">Email</h5>
+                        <div class="flexColumn_center">
+                            <p class="flexRow_center">theartsofgeneseo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div id="social" class="flexColumn_center">
+                        <h6 class="flexColumn_center">Social Media</h6>
+                        <div id="socialMediaLinks" class="flexRow_center">
+                            <a href=""><img src="Images/youtubeIcon.png" alt="Link to YouTube"></a>
+                            <a href="https://www.facebook.com/GeneseoPerformingArtsCouncil" target="_blank"><img src="Images/facebookIcon.png" alt="Link to Facebook"></a>
+                        </div>
+                    </div>
+                </container>
             </div>
         </div>
-        <div class="siteCredit">Designed and Built by <a href=""> Sammie's Sites</a> &#169;</div>
+
+        <div id="siteCredit" class="">
+            <div class="flexRow_center">
+                <p> Geneseo Performing Arts Council &#169; 2023</p>
+            </div>
+            <div id="myCredit" class="flexRow_center">
+                <p>Designed and Built by <a href="https://www.samanthaengland.io/" target="_blank">Sammie's Sites</a></p>
+            </div>
+        </div>
     </footer>
-	<script src="index.js"></script>
+
+	<script src="main.js"></script>
   </body>
 </html>

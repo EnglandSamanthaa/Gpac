@@ -1,117 +1,188 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-    overflow-x: hidden;
-    width: 100vw;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/* * {border: solid 2px red !important;} */
 
 
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-
-/* header style */
-/* header * {
-    border: solid green 1px;
-} */
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    background-color: green;
-    color: white;
-    border-bottom: 10px solid yellow;
-}
-header div img{
-    height: 300px;
-    width: 300px;
-    padding: 10px 25px 0px 25px;
-    margin-bottom: -25px;
-}
-img.left{
-    transform: rotate(-25deg);
-}
-img.right{
-    transform: rotate(25deg);
-    padding-right: 50px;
-}
-.navigation{
+/* Flex styles */
+.flexColumn_center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 75vw;
 }
-.navigation h1{
-    height: 100px;
-    width: 100%;
+.flexColumn_justifiyCenter_alignleft{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+}
+.flexColumn_justifiyCenter_alignRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.flexColumn_justifyFlexEnd_alignCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flexColumn_justifyFlexEnd_alignSpaceBetween{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: flex-end;
+}
+.flexColumn_justifySpaceAround_alignCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
-.navList{
+.flexColumn_justifySpaceBetween_alignCenter{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100px;
-    padding: 0px;
 }
-.navList li{
-    width: 20%;
-    height: inherit;
+.flexRow_center {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
-.navList a{
+.flexRow_justifySpaceBetween_alignCenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexRow_noWrap_justifyLeft_alignCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flexRow_noWrap_justifyRight_alignCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flexRowWrap_justifySpaceAround_alignCenter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexRowWrap_justifySpaceAround_alignTop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.flexRowWrap_justifySpaceBetween_alignTop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+
+/* Header Styles */
+/* header *{border:solid red 1px} */
+header {
+    /* position: fixed;
+    top: 0; */
+    width: 80vw;
+    z-index: 1000;
+    background-color: #044c2ebb;
+    color: white;
+    border: solid black 5px;
+    border-top: none;
+}
+.headerLogoContainer{
+    width: 80vw;
+}
+header div img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: -80px;
+}
+img.left {
+    transform: rotate(-25deg);
+}
+.headerDonateNameContainer{
+    width: 49vw;
+    height: 200px;
+}
+.donate {
+    width: 100%;
+    height: 25%;
+}
+.donate h3{
+    border-radius: 25px;
+    background: yellow;
+    height: 100%;
+    width: 30%;
+    color: black;
+    font-size: 1.6rem;
+}
+.name {
+    width: 100%;
+    height: 75%;
+}
+.name h1 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 15px;
+}
+.name h2 {
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+}
+img.right {
+    transform: rotate(25deg);
+}
+
+/* Navigation Styles */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80vw;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.navListContainer {
+    height: 50px;
+    width: 80vw;
+    background: yellow;
+    margin-top: 25px;
+}
+.navList {
+    width: 75%;
+    height: 100%;
+    padding: 0px 100px;
+}
+.navList li {
+    width: 20%;
+    height: inherit;
+}
+.navList a {
     text-decoration: inherit;
     color: black;
     cursor: auto;
@@ -119,245 +190,367 @@ img.right{
 
 
 
-/* footer style */
-/* footer * {
-    border: solid green 3px;
-}  */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100vw;
-    background: green;
-    border-top: 5px solid yellow;
+
+
+/* Footer Styles */
+
+/* footer * {border: solid red 1px;} */
+footer {
+    background: #044c2e;
+    font-size: 1rem;
+    width: 80vw;
+    border-right: black solid 5px;
+    border-left: black solid 5px;
+    border-bottom: none;
 }
-.gpacFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.gpacFooter {
     width: 100%;
-    height: 125px;
-    color: white;   
+    color: white;
+    height: 300px;
 }
-.social, .mailing, .info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
+#geneseoLogo {
+    width: 45%;
+    height: 100%;
 }
-.info{
-    padding: 10px 10px;
+#geneseoSchoolsLogo{
+    height: 280px !important;
 }
-.social{
-    flex-direction: row;
+#contactFooter,
+#boardFooter {
+    width: 25%;
+    height: 100%;
+
 }
-.social div{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#footerBoardHeadingContainer,
+#footerContactHeadingContainer{
+    width: 100%;
+    height: 15%;
+    z-index: 1;
+}
+#footerBoardListContainer,
+#footerContactContainer{
+    width: 97%;
+    height: 85%;
+    margin-top: -1%;
+}
+#footerBoardListContainer{
     padding: 10px;
 }
-.social img{
-    height: 30px;
-    width: 30px;
-}
-.siteCredit{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 0);
-}
-.siteCredit div{
-    padding: 0px 10px;
-}
-.myCredit{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-
-
-main{
-    min-height: 80vh;
-    width: 100vw;
+#boardFooter h5, #contactFooter h5 {
+    width: 102%;
+    background: yellow;
+    text-align: center;
+    font-size: 1.6rem;
     color: black;
-    /* background:  url(Images/aud.png) rgba(0, 128, 0, 0.856);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border: solid black 2px;
 }
-.mainContainerDiv{ 
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#presidentsFooter,
+#vicePresidentsFooter,
+#treasurerFooter,
+#assistantTreasurerFooter{
+    border-bottom: dotted yellow 1px;
 }
-.homeParagraph{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+.footerBoard {
     width: 100%;
+    padding: 5px 0px;
 }
-.harvestFestSignUp{
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-.harvestFestSignUp div, .remindSignUp{
-    margin: 25px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-#soundTrailer{
-    width: 100%;
-}
-
-
-
-
-
-
-/* small pc */
-@media (max-width: 1250px){
-
-/* header * {
-    border: solid green 1px;
-}  */
-header div img{
-    height: 200px;
-    width: 200px;
-}   
-}
-
-
-/* tablet */
-@media (max-width: 775px){
-/* header * {
-    border: solid white 1px;
-}  */
-header div img{
-    height: 150px;
-    width: 150px;
-}
-img.left{
-    transform: rotate(0);
-}
-img.right{
-display: none;
-}
-.navigation{
-    height: 150px;
-}
-.navigation h1{
-    height: 100px;
-}
-.navList{
-    height: 75px;
-    padding-right: 40px;
-}
-
-
-.info{
-    align-items: flex-start;
+#boardFooter h6{
     width: 50%;
 }
-.mailing{
+.footerBoard div{
+    width: 50%;
+}
+.footerBoard div p{
+    width: 100%;
+}
+
+#vicePresidentListFooter span{
+    margin-left: 5px;
+}
+
+#mailing, #email, #social {
+    width: 100%;    
+}
+#mailing h6, #email h6, #social h6 {
+    border-bottom: 1px dotted yellow;
+    font-size: 1.2rem;
+    width: 75%;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#mailing div {
+    width: 80%;
+    padding-left: 20%;
+}
+
+#email div{
+    width: 100%;
+    text-align: center;
+}
+
+#social img{
+    margin: 5px;
+}
+#siteCredit{
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+/* Main Content Styles */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: 80vw;
+    min-height: 80vh;
+    background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), /* Overlay */
+    url('Images/aud.png') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-right: black solid 5px;
+    border-left: black solid 5px;
+}   
+
+body{
+    overflow-x: hidden;
+    align-items: center;
+    background-color: #044c2e;
+    background: linear-gradient(rgba(4, 76, 46, 0.87), rgba(4, 76, 46, 0.87)), /* Overlay */
+    url('Images/leaves.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+}
+
+#homeMainContentContainer,
+.boardContainer,
+.eventsContainer,
+.familyResourcesContainer,
+.facultyContainer {
+    width: 80%;
+    margin-top: 50px;
+    padding-right: 3vh;
+
+    /* border-right: ridge 2px black;
+    border-left: ridge 2px black;
+    border-bottom: ridge 2px black; */
+}
+
+
+
+
+
+
+/* borders on everything on the landing page, i use when messing with layout */
+/* #landingPage *{border: solid red 1px;}  */
+
+/* Home Page Styles */
+/* #welcomeContainer{
+    margin: 1vh;
+} */
+#welcomeContainer,
+#contributions{
+    width: 55%;
+}
+#homeSignUpContainer{
     width: 30%;
-    align-items: flex-start;
 }
-.social{
-    width: 20%;
-    flex-direction: column;
-}
-.social div{
-    height: 30%;
-    padding: 5px;
+#homeSignUpContainer,
+#contributions {
+    margin-top: 5vh;
 }
 
+#homeMainContentContainer p{
+ text-align: center;
+ width: 100%;
+ margin: 1vh 0vh;
+ font-size: 1.3rem;
+
+}
+#homeMainContentContainer h2,
+#homeMainContentContainer h3,
+#homeMainContentContainer h4{
+    width: 100%;
+    text-align: center;
+    margin: 1vh;
+}
+#homeMainContentContainer h2{
+    font-size: 2.5rem;
+}
+#homeMainContentContainer h3{
+    font-size: 1.9rem;
+}
+#homeMainContentContainer h4{
+    font-size: 1.5rem;
+}
+#contributions h4{
+    margin-top: 0px;
 }
 
 
-/* mobile */
-@media (max-width: 425px){
-    /* header * {
-        border: solid white 1px;
-    }  */
-    header{
-        height: 200px;
-    }
-    .imageContainer{
-        height: 200px;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header div img{
-        height: 175px;
-        width: 175px;
-        padding: 10px;
-        margin: 0;
-    }
-    .navigation{
-        justify-content: flex-start;
-        height: 200px;
-        width: 50%;
-        
-    }
-    .navigation h1{
-        display: none;
-    }
-    .navList{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-        height: 200px;
-    }
-    .navList li{
-        width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-    }
-
-
-    .gpacFooter{
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        height: 250px;
-    }
-    .info, .mailing, .social{
-        justify-content: center;
-        align-items: center;
-    }
-    .info{
-        width: 100%;
-        padding-top: 10px;
-        text-align: center;
-    }
-    .mailing{
-        width: 100%;
-    }
-    .social{
-        width:100%;
-        flex-direction: row;
-    }
-
+#welcomeMessage{
+    margin: 2vh;
 }
+/* style for the facebook feed box */
+#facebookFeed {
+    width: 400px;
+    height: 550px;
+    border: 10px inset yellow;
+    box-shadow: inset 3px 3px 5px 7px rgba(0, 0, 0, 0.5);
+    background: #044c2e;
+}
+.follow {
+    width: inherit;
+    height: 50px;
+}
+#facebookFeed h3 {
+    color: yellow;
+}
+
+
+/* the styles for boxes with sign up links in them  */
+
+.withSignUpLinks {
+    min-height: 350px;
+    width: 100%;
+    background: #044c2e;
+    border: 10px double yellow;
+    box-shadow: inset 3px 3px 5px 7px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+#remindApp{
+    border-bottom: none;
+    z-index: 1;
+}
+#harvestFest{
+    border-top: none;
+    margin-top: -5px;
+}
+.signUpDiv{
+    width: 100%;
+}
+.withSignUpLinks h3{
+    height: 50px;
+    background: white;
+    color: #044c2e;
+    border-bottom: 3px solid #044c2e;
+}
+.signUpDiv h4{
+    height: 50px;
+    background-color: yellow;
+    margin-bottom: 4%;
+}
+.signUpDiv a{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+}
+#harvestFestSignUp,
+#remindAppSignUp {
+    width: 100%;
+}
+
+.harvestFestParagraph,
+#remindAppParagraphContainer {
+    padding: 25px;
+}
+
+
+
+/* style for the contributions section on home page */
+#contributions p{
+    text-align: left;
+}
+#volunteerContainer p{
+    text-align: center;
+}
+#contributions .listContainer{
+    width: 100%;
+}
+#contributions .listContainer h4{
+    text-align: left;
+}
+.listContainer ul{
+    width: 90%;
+    margin-left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* thank you letter for sound trailer style */
+#newSoundTrailer {
+    background: #044c2e;
+    border: 10px inset #044c2e;
+    box-shadow: inset 3px 3px 5px 7px rgba(0, 0, 0, 0.5);
+    padding: 3%;
+    margin: 25px 0px;
+    padding-bottom: none;
+}
+#newSoundTrailer h2,
+#newSoundTrailer h3 {
+    transform: rotate(-1deg);
+    font-family: 'Pacifico', cursive;
+    margin: none;
+    margin-top: -2.5%;
+}
+#newSoundTrailer h2{
+    text-align: right;
+    margin-bottom: -2.5%;
+}
+#newSoundTrailer img{
+    width: 100%;
+    border: solid black 3px;
+    box-shadow: 2px 2px 4px 2px black;
+}
+#thankYouParagraphs{
+    margin: 2%;
+    width: 45%;
+    margin-top: -1%;
+}
+#thankYouParagraphs p{
+    margin: 1%;
+    
+}
+
+
+
